@@ -9,10 +9,10 @@ const ingredients = [
 
 const makeList = (array) => {
   const elements = array.map((elem) => {
-    const itemEl = document.createElement("li");
-    itemEl.textContent = elem;
-    itemEl.classList.add("item");
-    return itemEl;
+    const el = document.createElement("li");
+    el.textContent = elem;
+    el.classList.add("item");
+    return el;
   });
   return elements;
 };
