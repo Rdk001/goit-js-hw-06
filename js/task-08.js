@@ -11,14 +11,16 @@ function onFormSubmit(event) {
   event.preventDefault();
   if (refs.inputEmailRef.value === "" || refs.inputPasswordRef.value === "") {
     alert("все поля должны быть заполнены");
+  } else {
+    const formEl = event.currentTarget.elements;
+    const email = formEl.email.value;
+    const password = formEl.password.value;
+    const formElementObject = {
+      email,
+      password,
+    };
+
+    console.log(formElementObject);
+    event.target.reset();
   }
-  const formEl = event.currentTarget.elements;
-  const email = formEl.email.value;
-  const password = formEl.password.value;
-  const formElementObject = {
-    email,
-    password,
-  };
-  console.log(formElementObject);
-  event.target.reset();
 }

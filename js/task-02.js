@@ -21,4 +21,3 @@ const itemsEl = makeList(ingredients);
 
 const listEl = document.querySelector("#ingredients");
 listEl.append(...itemsEl);
-console.log(listEl);

@@ -1,3 +1,7 @@
+// 1 завдання - це усе можна було б (а краще так і зробити) набагато простіше,
+//  якщо б ти просто проітерував усіх children, а там уже можна доступитись і до назв
+// і до кількості його дітей.
+
 const listEl = document.querySelector("#categories");
 
 const numberOfCategories = listEl.children.length;
